@@ -33,7 +33,7 @@ def makePdf(pdfFileName, listPages, dir = ''):
         pdf.add_page()
         pdf.image(dir + "\\" + str(page), 0, 0)
 
-    pdf.output(outPath + pdfFileName + ".pdf", "F")
+    pdf.output(outPath + "\\" + pdfFileName + ".pdf", "F")
 
     cover.close()
 
