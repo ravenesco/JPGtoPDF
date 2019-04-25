@@ -33,12 +33,12 @@ def makePdf(pdfFileName, listPages, dir = ''):
         pdf.add_page()
         pdf.image(dir + "\\" + str(page), 0, 0)
 
-    pdf.output(outPath + "\\" + pdfFileName + ".pdf", "F")
+    pdf.output(outPath + pdfFileName + ".pdf", "F")
 
     cover.close()
 
     # Remove the image directory
-    shutil.rmtree(dir, ignore_errors=True)
+    # shutil.rmtree(dir, ignore_errors=True)
 
 
 for chapterName in os.listdir(inPath):
