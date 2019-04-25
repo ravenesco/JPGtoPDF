@@ -38,7 +38,7 @@ def makePdf(pdfFileName, listPages, dir = ''):
     cover.close()
 
     # Remove the image directory
-    shutil.rmtree(dir, ignore_errors=True)
+    # shutil.rmtree(dir, ignore_errors=True)
 
 
 for chapterName in os.listdir(inPath):
